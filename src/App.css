@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -207,4 +207,58 @@ body {
   content: " ";
   clear: both;
   height: 0;
+}
+
+.typing
+{
+  color: #86BB71;
+  animation:  pulse 1s infinite;
+  font-size:10px;
+}
+
+.typing + .typing
+{
+  margin-left: 5px;
+}
+
+.typing-1
+{
+   animation-delay: 0.15s; /* or: Xms */
+}
+
+.typing-2
+{
+  animation-delay: 0.30s; /* or: Xms */
+}
+
+.typing-3
+{
+
+  animation-delay: 0.45s; /* or: Xms */
+}
+
+@keyframes pulse {
+  0% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100%
+  {
+    opacity:1;
+  }
+}
+
+.message-data .fa.fa-circle.me
+{
+   margin-left:5px;
+}
+.message-data .fa.fa-circle
+{
+  margin-right:5px;
+}
+.chat-history li
+{
+  list-style:none;
 }
