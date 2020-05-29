@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import MessageHistory from "./components/MessageHistory";
+import MessageModel from "./models/MessageModel";
 
 function App() {
   const messages = [{
@@ -34,12 +35,14 @@ function App() {
     time: '10:31'
   }];
 
+  const messagesObj=messages.map(item=>new MessageModel(item));
+
 // в компоненте App:
   return (
       <div className="clearfix container">
         <div className="chat">
           <div className="chat-history">
-            <MessageHistory list={messages} />
+            <MessageHistory list={messagesObj} />
           </div>
         </div>
       </div>

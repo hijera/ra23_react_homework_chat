@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import Message from "./Message";
 import Response from "./Response";
 import Typing from "./Typing";
+import MessageModel from "../models/MessageModel";
 
 MessageHistory.propTypes = {
-    
+    list:   PropTypes.arrayOf(PropTypes.instanceOf(MessageModel))
 };
 
 function MessageHistory(props) {

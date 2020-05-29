@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import MessageModel from "../models/MessageModel";
 
 Typing.propTypes = {
-    
+    message: PropTypes.instanceOf(MessageModel),
+    from: PropTypes.shape({name:PropTypes.string})
 };
 
 function Typing(props) {
