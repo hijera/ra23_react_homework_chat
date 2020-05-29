@@ -4,11 +4,11 @@ import MessageModel from "../models/MessageModel";
 
 Response.propTypes = {
     message: PropTypes.instanceOf(MessageModel),
-    from: PropTypes.shape({name:PropTypes.string})
+    from: PropTypes.shape({name: PropTypes.string})
 };
 
 function Response(props) {
-    const { message,from } = props;
+    const {message, from} = props;
     return (
         <li className="clearfix">
             <div className="message-data align-right">

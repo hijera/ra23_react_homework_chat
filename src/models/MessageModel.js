@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 
 export default class MessageModel {
     constructor(entity) {
-        Object.assign(this,{
+        Object.assign(this, {
             id: null,
-            from: {name:''},
+            from: {name: ''},
             type: null,
             time: '',
             text: ''
-        },entity);
+        }, entity);
     }
 }
 
